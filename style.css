@@ -2,6 +2,8 @@ body, html {
   height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #121212; /* Dark background for the whole page */
+  color: #e0e0e0; /* Lighter text for better readability */
 }
 
 .chat-container {
@@ -11,15 +13,15 @@ body, html {
   height: 90vh;
   padding: 20px;
   overflow-y: auto;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
+  border: 1px solid #333; /* Darker border */
+  background-color: #1a1a1a; /* Darker background for chat area */
 }
 
 .input-area {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  background-color: #fff;
+  background-color: #222; /* Darker background for input area */
 }
 
 #chat-area {
@@ -31,31 +33,33 @@ body, html {
   margin: 5px 0;
   padding: 10px;
   border-radius: 20px;
+  color: #fff; /* Ensure text is white for all messages */
 }
 
 .user-message {
   align-self: flex-end;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #004080; /*#0056b3; /* Keep the user message color, adjust if needed */
 }
 
 .bot-message {
   align-self: flex-start;
-  background-color: #e9e9eb;
-  color: #333;
+  background-color: #333; /* Darker background for bot messages */
+  color: #e0e0e0; /* Light text color for bot messages */
 }
 
 #user-input {
   width: 80%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #555; /* Darker border for input field */
   border-radius: 20px;
   font-size: 16px;
+  background-color: #222; /* Darker background for input field */
+  color: #e0e0e0; /* Lighter text color for input */
 }
 
 #send-button {
   width: 15%;
-  background-color: #007bff;
+  background-color: #004080; /*#007bff; */
   color: white;
   border: none;
   border-radius: 20px;
@@ -64,5 +68,5 @@ body, html {
 }
 
 #send-button:hover {
-  background-color: #0056b3;
+  background-color: #003366; /*#0056b3; /* Adjust hover color as needed */
 }
