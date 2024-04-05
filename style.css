@@ -1,8 +1,52 @@
+
+/* Apply a dark background to the entire body */
 body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make body take up full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #333; /* Dark background */
+    color: #fff; /* Light text color */
     font-family: Arial, sans-serif;
-    margin: 20px;
 }
 
-input, button {
-    margin: 10px 0;
+/* Ensure the entire container is centered */
+.container {
+    text-align: center;
 }
+
+.container {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#sentenceInput {
+    padding: 10px;
+    border-radius: 5px;
+    padding-right: 90px; /* Adjust if the button size changes */
+    width: 300px; /* Or adjust based on your preference */
+    border: 1px solid #777; /* Optional: adds a border to the input */
+}
+
+button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 5px; /* Creates a little space from the right edge */
+    height: calc(100% - 2px); /* Adjusts the height to fit within the input-wrapper */
+    width: 80px; /* Adjust width as needed */
+    border-radius: border-radius: 3px; /* Slightly rounded corners for the button 0 5px 5px 0; /* Rounded corners on the right side */
+    border: none;
+    background-color: #666;
+    color: white;
+    cursor: pointer;
+}
+
+/* Keep your existing .container styles for the dark theme */
