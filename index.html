@@ -1,31 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Letter Counter</title>
-    <link rel="stylesheet" type="text/css" href="style.css"> <!-- If you have a CSS file -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chatbot Interface</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!--    <div class="container">-->
-<!--        <input type="text" id="sentenceInput" placeholder="Type a sentence">-->
-<!--        <button onclick="countLetters()">Count Letters</button>-->
-<!--        <p>Number of letters: <span id="letterCount">0</span></p>-->
-<!--    </div>-->
-<!--    <div class="container">-->
-<!--        <form id="letterForm">-->
-<!--            <input type="text" id="sentenceInput" placeholder="Type a sentence">-->
-<!--            <button type="submit">Submit</button>-->
-<!--        </form>-->
-<!--        <p>Number of letters: <span id="letterCount">0</span></p>-->
-<!--    </div>-->
 
-    <div class="container">
-        <div class="input-wrapper">
-            <input type="text" id="sentenceInput" placeholder="Type a sentence">
-            <button type="submit">Count Letters</button>
-        </div>
-        <p>Number of letters: <span id="letterCount">0</span></p>
-    </div>
+<div class="chat-container">
+  <div id="chat-area"></div>
+</div>
+<div class="input-area">
+  <input type="text" id="user-input" placeholder="Type a message..." autocomplete="off"/>
+  <button id="send-button">Send</button>
+</div>
 
-    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+<script src="script.js"></script>
 </body>
 </html>
+
